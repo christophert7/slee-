@@ -264,16 +264,16 @@ footer p{margin:0 0 .9rem;max-width:62ch}
 
   <h2>What we looked at instead</h2>
 
-  <p>YU SLEEP takes a different angle. It is a liquid botanical blend you take under the tongue before bed — not a tablet you swallow and wait on. The formula is built around traditional calming botanicals rather than a single heavy sedative ingredient.</p>
+  <p>YU SLEEP takes a different angle. It is a liquid you take by dropper before bed rather than a tablet you swallow and wait on, and it spreads the work across ten ingredients — plant extracts, minerals, amino acids and a deliberately small amount of melatonin — instead of leaning on one sedative.</p>
 
   <div class="product">
     <h3>YU SLEEP, in short</h3>
-    <p>A sublingual botanical sleep formula in a 60&nbsp;ml amber dropper bottle.</p>
+    <p>A liquid sleep formula taken by dropper, built from ten ingredients rather than one heavy sedative.</p>
     <ul>
-      <li><strong>How it is taken:</strong> drops held under the tongue roughly 30 minutes before bed.</li>
-      <li><strong>What is in it:</strong> [ REPLACE with the real ingredient list from the affiliate page — do not guess ]</li>
-      <li><strong>What it is not:</strong> not a prescription product, not a sleeping pill, not habit-forming by design.</li>
-      <li><strong>Guarantee:</strong> [ CONFIRM the current guarantee terms on the affiliate page before publishing ]</li>
+      <li><strong>How it is taken:</strong> two droppers, about 30 minutes before bed.</li>
+      <li><strong>What is in it:</strong> red tart cherry extract, 5-HTP, vitamins B6 and B2, magnesium glycinate, apigenin, lemon balm extract, L-theanine, GABA, and melatonin at 0.9&nbsp;mg per serving.</li>
+      <li><strong>Worth noting on the melatonin:</strong> 0.9&nbsp;mg is a low dose. Many products on the shelf carry five to ten times that, which is a common reason people wake up feeling heavy.</li>
+      <li><strong>Guarantee:</strong> 60 days, money back.</li>
     </ul>
   </div>
 
@@ -281,18 +281,18 @@ footer p{margin:0 0 .9rem;max-width:62ch}
 
   <div class="cta">
     <a class="btn" href="https://getyusleep.com/?hopId=1ad56262-7880-45b2-92cd-e77b3d529fae" rel="nofollow sponsored noopener">See the full YU SLEEP breakdown</a>
-    <p class="fine">Takes you to the official product page, where the ingredients, pricing and return policy are laid out in full. We earn a commission if you buy through this link, at no extra cost to you.</p>
+    <p class="fine">Takes you to the official product page, where the full ingredient panel, pricing and the 60-day return policy are laid out. We earn a commission if you buy through this link, at no extra cost to you.</p>
   </div>
 
 </div>
 
 <footer class="wrap">
   <p class="footlinks">
-    <a class="unsub" href="[SUBSCRIBE_LINK]">Unsubscribe</a>
+    <a class="unsub" href="[UNSUBSCRIBE_URL]">Unsubscribe</a>
   </p>
 
   <p>[ christopher ]<br>
-  [ 347 Broadway belfast uk ]<br>
+  [ 200 Broadway belfast uk ]<br>
   [ info@tgscale.com ]</p>
 
   <div class="disclaimer">
