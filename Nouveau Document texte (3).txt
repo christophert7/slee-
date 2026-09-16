@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The hour that isn't yours — YU SLEEP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E9EDF2;
+  --paper-deep:#DCE3EB;
+  --ink:#1B2333;
+  --dusk:#4A566E;
+  --herb:#3F7050;
+  --herb-soft:#E2EBE3;
+  --bottle:#8B5E34;
+  --rule:rgba(27,35,51,.16);
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#151A22;
+    --paper-deep:#1D242F;
+    --ink:#E4E9F0;
+    --dusk:#9EABBF;
+    --herb:#7FB68E;
+    --herb-soft:#1E2A22;
+    --bottle:#C79A6B;
+    --rule:rgba(228,233,240,.18);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#151A22;
+  --paper-deep:#1D242F;
+  --ink:#E4E9F0;
+  --dusk:#9EABBF;
+  --herb:#7FB68E;
+  --herb-soft:#1E2A22;
+  --bottle:#C79A6B;
+  --rule:rgba(228,233,240,.18);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:1.125rem;
+  line-height:1.66;
+  font-weight:300;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--herb);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:40rem;margin:0 auto;padding:0 1.35rem}
+
+/* ---------- hero ---------- */
+.hero{padding:3.5rem 0 2.25rem}
+.clock{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(4.5rem,24vw,8.5rem);
+  line-height:.82;
+  letter-spacing:-.045em;
+  font-variant-numeric:lining-nums;
+  margin:0;
+}
+.clock span{font-size:.28em;letter-spacing:.02em;vertical-align:.9em;margin-left:.22em;color:var(--dusk)}
+.hero p.lede{
+  font-size:1.5rem;
+  line-height:1.38;
+  margin:1.5rem 0 0;
+  max-width:22ch;
+  font-weight:400;
+}
+.hero p.sub{color:var(--dusk);margin:1.1rem 0 0;font-size:1.0625rem;max-width:40ch}
+@media (prefers-reduced-motion: no-preference){
+  .hero>*{animation:rise .8s cubic-bezier(.2,.7,.3,1) backwards}
+  .hero>*:nth-child(2){animation-delay:.14s}
+  .hero>*:nth-child(3){animation-delay:.24s}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+
+hr.rule{border:0;border-top:1px solid var(--rule);margin:2.5rem 0}
+
+/* ---------- night sequence ---------- */
+.night{padding:.5rem 0 1rem}
+.beat{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:.3rem;
+  padding:1.15rem 0;
+  border-top:1px solid var(--rule);
+}
+.beat:first-child{border-top:0}
+.beat time{
+  font-family:var(--sans);
+  font-size:.8125rem;
+  font-weight:600;
+  letter-spacing:.04em;
+  color:var(--herb);
+  font-variant-numeric:tabular-nums;
+}
+.beat p{margin:0;font-size:1.0625rem;line-height:1.6}
+@media (min-width:46rem){
+  .beat{grid-template-columns:5.5rem 1fr;gap:1.5rem;align-items:baseline}
+  .beat time{text-align:right;padding-top:.28rem}
+}
+
+/* ---------- body copy ---------- */
+h2{
+  font-family:var(--serif);
+  font-weight:400;
+  font-size:1.75rem;
+  line-height:1.24;
+  letter-spacing:-.018em;
+  margin:2.75rem 0 .9rem;
+  max-width:26ch;
+}
+p{margin:0 0 1.1rem}
+.body p{max-width:64ch}
+em{font-style:italic}
+strong{font-weight:600}
+
+.pull{
+  font-size:1.3125rem;
+  line-height:1.42;
+  font-style:italic;
+  font-weight:300;
+  border-left:2px solid var(--herb);
+  padding:.15rem 0 .15rem 1.15rem;
+  margin:2rem 0;
+  color:var(--ink);
+  max-width:34ch;
+}
+
+/* ---------- product ---------- */
+.product{
+  background:var(--herb-soft);
+  border-radius:3px;
+  padding:1.85rem 1.5rem;
+  margin:2.5rem 0;
+}
+.product h3{
+  font-family:var(--serif);
+  font-size:1.375rem;
+  font-weight:500;
+  margin:0 0 .65rem;
+  letter-spacing:-.01em;
+}
+.product p{font-size:1rem;margin:0 0 .85rem;color:var(--ink)}
+.product ul{margin:0;padding:0;list-style:none}
+.product li{
+  font-size:1rem;
+  padding:.5rem 0 .5rem 1.35rem;
+  position:relative;
+  line-height:1.5;
+  border-top:1px solid var(--rule);
+}
+.product li:first-child{border-top:0}
+.product li::before{
+  content:"";
+  position:absolute;
+  left:.15rem;top:1.12rem;
+  width:.4rem;height:.4rem;
+  border-radius:50%;
+  background:var(--herb);
+}
+
+/* ---------- cta ---------- */
+.cta{margin:2.75rem 0 1rem;text-align:left}
+.btn{
+  display:inline-block;
+  font-family:var(--sans);
+  font-size:1.0625rem;
+  font-weight:600;
+  letter-spacing:-.005em;
+  color:#fff;
+  background:var(--herb);
+  text-decoration:none;
+  padding:1.05rem 2rem;
+  border-radius:3px;
+  transition:background .18s ease;
+}
+.btn:hover,.btn:focus-visible{background:#33603F}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .btn{color:#0F1A13}
+  :root:not([data-theme="light"]) .btn:hover{background:#96C9A3}
+}
+.cta .fine{
+  font-family:var(--sans);
+  font-size:.875rem;
+  color:var(--dusk);
+  margin:.95rem 0 0;
+  line-height:1.55;
+  max-width:46ch;
+}
+
+/* ---------- footer ---------- */
+footer{
+  font-family:var(--sans);
+  font-size:.8125rem;
+  line-height:1.65;
+  color:var(--dusk);
+  border-top:1px solid var(--rule);
+  margin-top:3rem;
+  padding:2.25rem 0 3.5rem;
+}
+footer p{margin:0 0 .9rem;max-width:62ch}
+.footlinks{display:flex;flex-wrap:wrap;gap:.35rem 1.15rem;margin:0 0 1.35rem}
+.footlinks a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+.unsub{
+  display:inline-block;
+  font-weight:600;
+  color:var(--ink);
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.disclaimer{
+  border-top:1px solid var(--rule);
+  padding-top:1.25rem;
+  margin-top:1.25rem;
+  font-size:.75rem;
+  line-height:1.6;
+}
+</style>
+</head>
+<body>
+
+<main>
+<header class="hero wrap">
+  <h1 class="clock">3:14<span>AM</span></h1>
+  <p class="lede">You did not set an alarm for this one.</p>
+  <p class="sub">Falling asleep was never the problem. Staying asleep is.</p>
+</header>
+
+<div class="wrap body">
+  <section class="night" aria-label="A typical night">
+    <div class="beat"><time datetime="23:20">11:20 PM</time><p>Lights out. You are tired enough that this feels like it will work.</p></div>
+    <div class="beat"><time datetime="01:52">1:52 AM</time><p>You surface for a second. Roll over. It is fine. You are still mostly under.</p></div>
+    <div class="beat"><time datetime="03:14">3:14 AM</time><p>Wide awake. Not anxious about anything in particular — just completely, uselessly awake, doing arithmetic on how many hours are left.</p></div>
+    <div class="beat"><time datetime="04:40">4:40 AM</time><p>You stop pretending and reach for your phone. The brightness is genuinely painful.</p></div>
+    <div class="beat"><time datetime="06:30">6:30 AM</time><p>The alarm goes off roughly forty minutes after you finally went back under.</p></div>
+  </section>
+
+  <hr class="rule">
+
+  <h2>Most sleep advice is aimed at the wrong half of the night.</h2>
+
+  <p>Almost everything you have been told — wind down earlier, cut the screens, keep the room cold — is about <em>getting to sleep.</em> And it works well enough. You get to sleep.</p>
+
+  <p>Waking at three and staying awake is a different thing entirely. Sleep researchers call it sleep maintenance difficulty, and it is one of the most commonly reported sleep complaints among adults over forty. Knowing the name for it does not make the ceiling any more interesting at 3:14, but it does explain why the usual advice keeps missing.</p>
+
+  <p class="pull">The goal is not falling asleep faster. It is staying under once you are there.</p>
+
+  <p>That is the part most over-the-counter options handle badly. A lot of them are built to knock you down hard and fast, which is why people describe waking up feeling thick-headed and slow — and why plenty of people stop using them within a few weeks.</p>
+
+  <h2>What we looked at instead</h2>
+
+  <p>YU SLEEP takes a different angle. It is a liquid botanical blend you take under the tongue before bed — not a tablet you swallow and wait on. The formula is built around traditional calming botanicals rather than a single heavy sedative ingredient.</p>
+
+  <div class="product">
+    <h3>YU SLEEP, in short</h3>
+    <p>A sublingual botanical sleep formula in a 60&nbsp;ml amber dropper bottle.</p>
+    <ul>
+      <li><strong>How it is taken:</strong> drops held under the tongue roughly 30 minutes before bed.</li>
+      <li><strong>What is in it:</strong> [ REPLACE with the real ingredient list from the affiliate page — do not guess ]</li>
+      <li><strong>What it is not:</strong> not a prescription product, not a sleeping pill, not habit-forming by design.</li>
+      <li><strong>Guarantee:</strong> [ CONFIRM the current guarantee terms on the affiliate page before publishing ]</li>
+    </ul>
+  </div>
+
+  <p>Whether it does anything for you specifically is an open question — sleep is stubbornly individual, and no supplement works the same way for everyone. What makes it worth a look is that the return terms are long enough to actually test it across several weeks rather than a couple of nights.</p>
+
+  <div class="cta">
+    <a class="btn" href="https://getyusleep.com/?hopId=1ad56262-7880-45b2-92cd-e77b3d529fae" rel="nofollow sponsored noopener">See the full YU SLEEP breakdown</a>
+    <p class="fine">Takes you to the official product page, where the ingredients, pricing and return policy are laid out in full. We earn a commission if you buy through this link, at no extra cost to you.</p>
+  </div>
+
+</div>
+
+<footer class="wrap">
+  <p class="footlinks">
+    <a class="unsub" href="[SUBSCRIBE_LINK]">Unsubscribe</a>
+  </p>
+
+  <p>[ christopher ]<br>
+  [ 347 Broadway belfast uk ]<br>
+  [ info@tgscale.com ]</p>
+
+  <div class="disclaimer">
+    <p>Advertising disclosure: this page contains affiliate links. If you purchase through them we may receive a commission at no additional cost to you. We are not the manufacturer or seller of the products featured.</p>
+    <p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Individual results vary. Consult your doctor before starting any supplement, particularly if you are pregnant, nursing, taking medication or managing a medical condition. Persistent sleep problems can be a sign of an underlying condition and are worth raising with a physician.</p>
+    <p>ClickBank is the retailer of products on this site. CLICKBANK&reg; is a registered trademark of Click Sales Inc. ClickBank's role as retailer does not constitute an endorsement of the opinions expressed here or of any product or method mentioned.</p>
+  </div>
+</footer>
+</main>
+
+</body>
+</html>
